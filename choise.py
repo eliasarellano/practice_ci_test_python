@@ -23,7 +23,7 @@ print(words[thirdquestion])
 # input file
 fin = open("data.txt", "rt")
 # output file to write the result to
-fout = open("src/index.html", "wt")
+fout = open("index.html", "wt")
 # for each line in the input file
 for line in fin:
     fout.write(
