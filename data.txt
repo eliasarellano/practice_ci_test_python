@@ -1,8 +1,8 @@
-Welcome to the paradise
+<?php
+echo 'Hello from your first test done in CI and github actions';
 
-question1
-question2
-question3
+echo 'Please answer the following questions';
 
-
-good bye
+echo 'question1';
+echo 'question2';
+echo 'question3';
