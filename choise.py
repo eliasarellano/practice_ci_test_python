@@ -26,7 +26,8 @@ fin = open("data.txt", "rt")
 fout = open("index.html", "wt")
 # for each line in the input file
 for line in fin:
-    fout.write(line.replace('question1', words[firstquestion])
+    fout.write(
+        line.replace('question1', words[firstquestion])
         .replace('question2', words[secondquestion])
         .replace('question3', words[thirdquestion])
     )
