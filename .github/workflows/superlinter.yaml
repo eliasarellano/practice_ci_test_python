@@ -36,6 +36,7 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/checking:testweb3
   Deploy-final:
+    needs: super-lint
     name: Deployment end
     runs-on: self-hosted
     steps:
