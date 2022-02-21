@@ -34,7 +34,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/checking:testweb2
+          tags: ${{ secrets.DOCKER_USERNAME }}/checking:testweb3
   Deploy-final:
     name: Deployment end
     runs-on: self-hosted
@@ -42,4 +42,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Run a simple command line
-        run: echo "Hello from self hosted"
+        run: |
+          docker pull harryelias/checking:testweb3
+          docker run -p 5013:80 harryelias/checking:testweb3 -d
