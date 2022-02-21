@@ -35,3 +35,10 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/checking:testweb2
+  Deploy-final:
+    name: Deployment end
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        run: echo "Hello from self hosted"
