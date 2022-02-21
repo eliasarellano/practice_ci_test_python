@@ -34,7 +34,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/checking:testweb3
+          tags: ${{ secrets.DOCKER_USERNAME }}/checking:testweb4
   Deploy-final:
     needs: super-lint
     name: Deployment end
@@ -46,5 +46,5 @@ jobs:
         run: docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_PASSWORD }}
       - name: Run a simple command line
         run: |
-          docker pull harryelias/checking:testweb3
-          docker run -p 5013:80 harryelias/checking:testweb3 -d
+          docker pull harryelias/checking:testweb4
+          docker run -p 5013:80 harryelias/checking:testweb4 -d
