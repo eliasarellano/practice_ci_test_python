@@ -47,5 +47,5 @@ jobs:
       - name: Run a simple command line
         run: |
           docker pull harryelias/checking:testweb5
-          docker run -d -p 5014:80 -d harryelias/checking:testweb5
+          docker run -P -d harryelias/checking:testweb5
 
