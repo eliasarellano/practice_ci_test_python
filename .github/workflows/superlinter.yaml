@@ -50,12 +50,16 @@ jobs:
     #     run: |
     #       docker pull harryelias/checking:testweb5
     #       docker run -d -p 5014:80 -d harryelias/checking:testweb5
-    services:
-      # Label used to access the service container
-      myimage:
-        # Docker Hub image
-        image: harryelias/checking:testweb6
-        #
-        ports:
-          # Opens tcp port 6379 on the host and service container
-          - 5016:80
+    # services:
+    #   # Label used to access the service container
+    #   myimage:
+    #     # Docker Hub image
+    #     image: harryelias/checking:testweb6
+    #     #
+    #     ports:
+    #       # Opens tcp port 6379 on the host and service container
+    #       - 5016:80
+    container:
+      image: harryelias/checking:testweb6
+      ports:
+        - 5016:80
