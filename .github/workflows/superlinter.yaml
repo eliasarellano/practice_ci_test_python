@@ -46,6 +46,6 @@ jobs:
         run: docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_PASSWORD }}
       - name: Run a simple command line
         run: |
-          docker pull harryelias/checking:testweb5
-          docker run -P -d harryelias/checking:testweb5
+          docker pull harryelias/checking:testweb6
+          docker run -P -d harryelias/checking:testweb6
 
