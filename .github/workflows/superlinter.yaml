@@ -39,6 +39,10 @@ jobs:
     needs: super-lint
     name: Deployment end
     runs-on: self-hosted
+        container:
+      image: harryelias/checking:testweb6
+      ports:
+        - 5016:80
     # steps:
     #   - name: Checkout code
     #     uses: actions/checkout@v2
@@ -59,7 +63,3 @@ jobs:
     #     ports:
     #       # Opens tcp port 6379 on the host and service container
     #       - 5016:80
-    container:
-      image: harryelias/checking:testweb6
-      ports:
-        - 5016:80
