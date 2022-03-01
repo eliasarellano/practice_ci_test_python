@@ -1,8 +1,8 @@
 <?php
-echo 'Hello from your first test done in CI and github actions \n';
+echo "Hello from your first test done in CI and github actions " ."<br>".;
 
-echo 'Please answer the following questions \n';
+echo "Please answer the following questions " ."<br>".;
 
-echo '\n question1 \n';
-echo '\n question2 \n';
-echo '\n question3 \n';
+echo "question1" ."<br>".;
+echo "question2" ."<br>".;
+echo "question3" ."<br>".;
