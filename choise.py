@@ -42,7 +42,7 @@ words = [
     "39",
     "40",
     "41",
-    "42"
+    "42",
 ]
 
 firstquestion = random.randint(0, 41)
